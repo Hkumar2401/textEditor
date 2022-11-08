@@ -1,0 +1,73 @@
+.heading{
+    text-align: center;
+    margin: 50px auto 50px;
+    font-size: 4rem;
+    color: blue;
+}
+
+.buttons{
+    text-align: center;
+}
+
+.btn{
+    margin: 10px 6px 10px;
+}
+
+
+
+
+
+.heading-3{
+    text-align: center;
+    margin: 20px auto 20px;
+}
+
+
+
+.col{
+    text-align: center;
+}
+
+#inputbox, #displaybox{
+    width: 30vw;
+    height: 50vh;
+    margin-bottom: 30px;
+    padding: 10px;
+    resize: none;
+}
+
+@media screen and (max-width:1400px){
+    #inputbox, #displaybox{
+
+        width: 80vw;
+        height: 60vw;
+        
+    }
+}
+
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.left-align{
+    text-align: left;
+}
+
+.center-align{
+    text-align: center;
+}
+
+.right-align{
+    text-align: right;
+}
+
+
