@@ -8,7 +8,7 @@ window.onload = () => {
 
 
 // To update the text in the formatted textbar with every keypress
-document.body.addEventListener("keydown", function () {
+document.querySelector("#inputbox").addEventListener("input", function () {
 
     let enteredText = document.querySelector("#inputbox").value;
 
