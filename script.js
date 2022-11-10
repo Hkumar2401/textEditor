@@ -79,12 +79,14 @@ document.querySelector("#right-align-btn").addEventListener("click", function ()
 
 
 // To update fontsize
-let i=0;
-while(i>=0){
-    document.querySelectorAll(".size")[i].addEventListener("click", function(){
-        let value = this.textContent;
-        document.querySelector("#displaybox").style.fontSize = value + "px";
-        document.querySelector("#drop-down").textContent = "Font-Size : " + value + "px";
-    });
-    i++;
-}
+let fonts = document.querySelectorAll(".size");
+
+fonts.forEach((font) =>{
+    font.addEventListener("click", ()=> {
+        let currentFont = font.textContent;
+        document.querySelector("#displaybox").style.fontSize = currentFont + "px";
+        document.querySelector("#drop-down").textContent = "Font-Size : " + currentFont + "px";
+
+    })
+
+});
