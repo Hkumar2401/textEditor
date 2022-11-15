@@ -22,15 +22,26 @@ document.querySelector("#inputbox").addEventListener("input", function () {
 document.querySelector("#bold-btn").addEventListener("click", function () {
 
     document.querySelector("#displaybox").classList.toggle("bold");
-    document.querySelector("#bold-btn").classList.toggle("active");
 
+    if(document.querySelector("#bold-btn").classList.contains("active")) {
+      document.querySelector("#bold-btn").classList.remove("active");
+     }
+     else{
+    document.querySelector("#bold-btn").classList.add("active");
+    }
 });
 
 // To add italic class on click
 document.querySelector("#italic-btn").addEventListener("click", function () {
 
     document.querySelector("#displaybox").classList.toggle("italic");
-    document.querySelector("#italic-btn").classList.toggle("active");
+
+    if(document.querySelector("#bold-btn").classList.contains("active")) {
+      document.querySelector("#bold-btn").classList.remove("active");
+     }
+     else{
+    document.querySelector("#bold-btn").classList.add("active");
+    }
 
 });
 
@@ -38,7 +49,13 @@ document.querySelector("#italic-btn").addEventListener("click", function () {
 document.querySelector("#underline-btn").addEventListener("click", function () {
 
     document.querySelector("#displaybox").classList.toggle("underline");
-    document.querySelector("#underline-btn").classList.toggle("active");
+    
+    if(document.querySelector("#bold-btn").classList.contains("active")) {
+      document.querySelector("#bold-btn").classList.remove("active");
+     }
+     else{
+    document.querySelector("#bold-btn").classList.add("active");
+    }
 
 });
 
