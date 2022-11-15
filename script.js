@@ -22,15 +22,34 @@ document.querySelector("#inputbox").addEventListener("input", function () {
 document.querySelector("#bold-btn").addEventListener("click", function () {
 
     document.querySelector("#displaybox").classList.toggle("bold");
+<<<<<<< HEAD
     document.querySelector("#bold-btn").classList.toggle("active-b-i-u");
+=======
+>>>>>>> 85d5c92fb8bf9b60253c8d0125a56840f6c77fc3
 
+    if(document.querySelector("#bold-btn").classList.contains("active")) {
+      document.querySelector("#bold-btn").classList.remove("active");
+     }
+     else{
+    document.querySelector("#bold-btn").classList.add("active");
+    }
 });
 
 // To add italic class on click
 document.querySelector("#italic-btn").addEventListener("click", function () {
 
     document.querySelector("#displaybox").classList.toggle("italic");
+<<<<<<< HEAD
     document.querySelector("#italic-btn").classList.toggle("active-b-i-u");
+=======
+
+    if(document.querySelector("#bold-btn").classList.contains("active")) {
+      document.querySelector("#bold-btn").classList.remove("active");
+     }
+     else{
+    document.querySelector("#bold-btn").classList.add("active");
+    }
+>>>>>>> 85d5c92fb8bf9b60253c8d0125a56840f6c77fc3
 
 });
 
@@ -38,7 +57,17 @@ document.querySelector("#italic-btn").addEventListener("click", function () {
 document.querySelector("#underline-btn").addEventListener("click", function () {
 
     document.querySelector("#displaybox").classList.toggle("underline");
+<<<<<<< HEAD
     document.querySelector("#underline-btn").classList.toggle("active-b-i-u");
+=======
+    
+    if(document.querySelector("#bold-btn").classList.contains("active")) {
+      document.querySelector("#bold-btn").classList.remove("active");
+     }
+     else{
+    document.querySelector("#bold-btn").classList.add("active");
+    }
+>>>>>>> 85d5c92fb8bf9b60253c8d0125a56840f6c77fc3
 
 });
 
