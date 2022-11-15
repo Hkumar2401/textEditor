@@ -2,7 +2,7 @@
 window.onload = () => {
 
     document.querySelector("#displaybox").style.textAlign = "left";
-    document.querySelector("#left-align-btn").classList.toggle("active");
+    document.querySelector("#left-align-btn").classList.toggle("active-b-i-u");
     
 };
 
@@ -22,7 +22,7 @@ document.querySelector("#inputbox").addEventListener("input", function () {
 document.querySelector("#bold-btn").addEventListener("click", function () {
 
     document.querySelector("#displaybox").classList.toggle("bold");
-    document.querySelector("#bold-btn").classList.toggle("active");
+    document.querySelector("#bold-btn").classList.toggle("active-b-i-u");
 
 });
 
@@ -30,7 +30,7 @@ document.querySelector("#bold-btn").addEventListener("click", function () {
 document.querySelector("#italic-btn").addEventListener("click", function () {
 
     document.querySelector("#displaybox").classList.toggle("italic");
-    document.querySelector("#italic-btn").classList.toggle("active");
+    document.querySelector("#italic-btn").classList.toggle("active-b-i-u");
 
 });
 
@@ -38,7 +38,7 @@ document.querySelector("#italic-btn").addEventListener("click", function () {
 document.querySelector("#underline-btn").addEventListener("click", function () {
 
     document.querySelector("#displaybox").classList.toggle("underline");
-    document.querySelector("#underline-btn").classList.toggle("active");
+    document.querySelector("#underline-btn").classList.toggle("active-b-i-u");
 
 });
 
@@ -48,10 +48,10 @@ document.querySelector("#underline-btn").addEventListener("click", function () {
 document.querySelector("#left-align-btn").addEventListener("click", function () {
 
     document.querySelector("#displaybox").style.textAlign = "left";
-    document.querySelector("#left-align-btn").classList.toggle("active");
+    document.querySelector("#left-align-btn").classList.toggle("active-b-i-u");
 
-    document.querySelector("#center-align-btn").classList.remove("active");
-    document.querySelector("#right-align-btn").classList.remove("active");
+    document.querySelector("#center-align-btn").classList.remove("active-b-i-u");
+    document.querySelector("#right-align-btn").classList.remove("active-b-i-u");
 
 });
 
@@ -59,10 +59,10 @@ document.querySelector("#left-align-btn").addEventListener("click", function () 
 document.querySelector("#center-align-btn").addEventListener("click", function () {
 
     document.querySelector("#displaybox").style.textAlign = "center";
-    document.querySelector("#center-align-btn").classList.toggle("active");
+    document.querySelector("#center-align-btn").classList.toggle("active-b-i-u");
 
-    document.querySelector("#left-align-btn").classList.remove("active");
-    document.querySelector("#right-align-btn").classList.remove("active");
+    document.querySelector("#left-align-btn").classList.remove("active-b-i-u");
+    document.querySelector("#right-align-btn").classList.remove("active-b-i-u");
 
 });
 
@@ -70,10 +70,10 @@ document.querySelector("#center-align-btn").addEventListener("click", function (
 document.querySelector("#right-align-btn").addEventListener("click", function () {
 
     document.querySelector("#displaybox").style.textAlign = "right";
-    document.querySelector("#right-align-btn").classList.toggle("active");
+    document.querySelector("#right-align-btn").classList.toggle("active-b-i-u");
     
-    document.querySelector("#left-align-btn").classList.remove("active");
-    document.querySelector("#center-align-btn").classList.remove("active");
+    document.querySelector("#left-align-btn").classList.remove("active-b-i-u");
+    document.querySelector("#center-align-btn").classList.remove("active-b-i-u");
     
 });
 
@@ -90,3 +90,4 @@ fonts.forEach((font) =>{
     })
 
 });
+ 
